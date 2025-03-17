@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h2>Test</h2>
+    <form action="submit_test.php" method="post">
+        <input type="hidden" name="user_id" value="1"> <!-- Replace with session user ID -->
+
+        <label>Question 1: What is PHP?</label>
+        <input type="hidden" name="question_id[]" value="101">
+        <input type="text" name="answer[]" required>
+
+        <label>Question 2: What does HTML stand for?</label>
+        <input type="hidden" name="question_id[]" value="102">
+        <input type="text" name="answer[]" required>
+
+        <button type="submit">Submit Test</button>
+    </form>
+</body>
+</html>
